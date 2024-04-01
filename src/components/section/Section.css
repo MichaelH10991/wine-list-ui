@@ -1,0 +1,13 @@
+.card-content-header {
+  color: #585858;
+  text-align: left;
+  font-size: 14px;
+  font-style: italic;
+  padding-bottom: 3px;
+}
+
+.card-content {
+  text-align: left;
+  display: flex;
+  align-items: center;
+}

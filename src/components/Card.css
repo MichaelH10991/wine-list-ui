@@ -1,0 +1,131 @@
+.card {
+  width: 507px;
+  /* min-height: 324px; */
+  border-radius: 23px;
+  /* box-shadow: -5px 6px 9px 0px #988e14; */
+  box-shadow: 0px 4px 11px 1px #2e6261;
+  background: #85cdcb;
+  /* flex-grow: 1; */
+
+  padding: 17px 24px;
+  padding-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  position: relative;
+}
+
+.card-subtitle {
+  color: #585858;
+  text-align: center;
+  font-size: 17px;
+  font-style: italic;
+  padding-bottom: 3px;
+}
+
+.delete-button {
+  /* position: absolute;
+  right: 9px;
+  top: 9px; */
+}
+
+.card-buttons button {
+  padding-top: 4px;
+  /* background: lightgrey; */
+  border-radius: 29px;
+  width: 32px;
+  height: 32px;
+
+  background: #e27d61;
+  transition: background 0.5s;
+}
+
+.card-buttons button:hover {
+  background: #b0573f;
+  color: white;
+}
+
+.card-buttons button:hover svg {
+  color: white;
+}
+
+.card-buttons {
+  position: absolute;
+  right: 9px;
+  top: 9px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.card-buttons svg {
+  color: #ffffff;
+  transition: color 0.5s;
+}
+
+.card-title {
+  font-size: 2em;
+  margin: 0px 72px;
+}
+
+.card-content-container {
+  border: 2px solid #41b3a3;
+  background: #bcfffd;
+  /* background: #e8a87c; */
+  padding: 5px 10px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: inset 1px 1px 5px 0px #606060;
+}
+
+.pill {
+  background: #ffff5e;
+  width: max-content;
+  border-radius: 15px;
+  border: solid 2.5px #dbdb27;
+  padding: 2px 9px 2px 9px;
+
+  position: relative;
+  font-weight: 300;
+
+}
+
+.pill-container {
+  position: relative;
+}
+
+.pill-tooltip {
+  left: 0;
+  top: -36px;
+  padding: 5px;
+  border-radius: 9px;
+  color: black;
+  background-color: #e6e4e4;
+  position: absolute;
+
+  opacity: 0;
+  visibility: hidden;
+  font-weight: 400;
+
+  transition: opacity 0.5s;
+}
+
+.pill-container:hover .pill-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.pillbox {
+  max-width: 273px;
+  display: flex;
+  column-gap: 5px;
+  row-gap: 3px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  align-content: flex-start;
+}
